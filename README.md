@@ -42,3 +42,7 @@
 ・消耗品の消費予測機能
 ・他のユーザーと在庫情報を共有する機能
 ・在庫管理のレポート機能: データベースに蓄積された使用履歴を元に、消耗品の消費傾向を視覚化。
+
+##　画面遷移図
+
+https://www.figma.com/design/fXNDAdryb5hrAprSWbSWkK/AI-MEMO?node-id=0-1&m=dev&t=STGHOv7CNovwNhGZ-1
