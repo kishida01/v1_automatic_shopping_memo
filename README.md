@@ -49,4 +49,4 @@ https://www.figma.com/design/fXNDAdryb5hrAprSWbSWkK/AI-MEMO?node-id=0-1&m=dev&t=
 
 ## ER図
 
-https://gyazo.com/4b327a9b952f0d87c57264ff2dd3c708
+https://i.gyazo.com/4b327a9b952f0d87c57264ff2dd3c708.png
