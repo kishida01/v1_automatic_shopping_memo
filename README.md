@@ -46,3 +46,7 @@
 ##　画面遷移図
 
 https://www.figma.com/design/fXNDAdryb5hrAprSWbSWkK/AI-MEMO?node-id=0-1&m=dev&t=STGHOv7CNovwNhGZ-1
+
+## ER図
+
+https://i.gyazo.com/71bfbeac7b5cc7d07ebe5c6cfcb6afc1.png
