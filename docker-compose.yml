@@ -1,20 +1,35 @@
-version: '3'
 services:
   db:
-    image: postgres
-    environment:
-      POSTGRES_PASSWORD: password
+    image: mysql:5.7
+    platform: linux/amd64
+    environment: 
+      TZ: Asia/Tokyo
+      MYSQL_ROOT_PASSWORD: password
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+
   web:
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
+    tty: true
+    stdin_open: true
     volumes:
-      - ".:/myapp"
+      - .:/v1_storage_deck_app:delegated
+      - bundle_data:/usr/local/bundle:cached
+      - node_modules:/v1_storage_deck_app/node_modules:cached
+      - /v1_storage_deck_app/vendor
+      - /v1_storage_deck_app/tmp
+      - /v1_storage_deck_app/log
+      - /v1_storage_deck_app/.git
+    environment:
+      TZ: Asia/Tokyo
+      SELENIUM_DRIVER_URL: http://chrome:4444/wd/hub
     ports:
       - "3000:3000"
-    depends_on:
-      - db
 
 volumes:
-  db_data:
+  mysql_data:
+  bundle_data:
+  node_modules:
