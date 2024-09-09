@@ -1,0 +1,28 @@
+a:
+  activerecord:
+    models:
+      user: 'ユーザー'
+    attributes:
+      user:
+        id: 'ID'
+        name: '名前'
+        password: 'パスワード'
+        password_confirmation: 'パスワード再入力'
+        created_at: '登録日'
+      category:
+        name: 'カテゴリー名'
+        created_at: '作成日'
+      tag:
+        name: 'タグ名'
+        created_at: '作成日'
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: 'パスワードを入力してください'
+              invalid: 'パスワードに誤りがあります'
+              too_short: 'パスワードは8文字以上入力してください'
+            password_confirmation:
+              blank: 'パスワードを再入力してください'
+              confirmation: 'パスワードが異なります'
