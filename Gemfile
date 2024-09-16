@@ -18,7 +18,6 @@ gem "whenever"
 
 # UI/UX
 gem "rails-i18n"
-gem "jbuilder"
 gem "meta-tags"
 gem "slim-rails"
 gem "html2slim"
@@ -32,6 +31,10 @@ gem "active_decorator"
 # Pagination
 gem "kaminari"
 gem "kaminari-i18n"
+
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
