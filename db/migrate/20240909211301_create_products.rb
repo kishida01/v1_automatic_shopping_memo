@@ -5,7 +5,7 @@ class CreateProducts < ActiveRecord::Migration[7.2]
       t.string :category, null: false
       t.integer :default_quantity, null: false, default: 0
       t.string :unit, null: false
-      
+
       t.timestamps
     end
   end

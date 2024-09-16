@@ -9,6 +9,7 @@ gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
+gem "mysql2"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
@@ -33,7 +34,7 @@ gem "kaminari"
 gem "kaminari-i18n"
 
 group :production do
-  gem 'pg'
+  gem "pg"
 end
 
 group :development, :test do

@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'inventories#index'
+  root "inventories#index"
 end
