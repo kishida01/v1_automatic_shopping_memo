@@ -34,7 +34,7 @@ gem "kaminari"
 gem "kaminari-i18n"
 
 group :production do
-  gem 'pg'
+  gem "pg"
 end
 
 group :development, :test do
