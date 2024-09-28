@@ -10,6 +10,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
 gem "mysql2"
+gem "cssbundling-rails"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
@@ -22,6 +23,9 @@ gem "rails-i18n"
 gem "meta-tags"
 gem "slim-rails"
 gem "html2slim"
+gem "bootstrap", "~> 5.3.3"
+gem "dartsass-sprockets"
+gem "jquery-rails"
 
 # Authentication
 gem "sorcery"

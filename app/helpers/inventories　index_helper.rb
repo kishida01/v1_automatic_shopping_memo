@@ -1,2 +1,0 @@
-module Inventories　indexHelper
-end
