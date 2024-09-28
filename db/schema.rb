@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_09_09_213243) do
+ActiveRecord::Schema[7.2].define(version: 2024_09_16_170110) do
   create_table "inventories", force: :cascade do |t|
     t.integer "family_size", default: 1, null: false
     t.integer "estimated_consumption_rate", default: 0, null: false
@@ -53,6 +53,8 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_09_213243) do
     t.string "salt"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "reset_password_token"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 end
